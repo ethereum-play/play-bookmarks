@@ -1,0 +1,27 @@
+{
+  "name": "play-bookmarks",
+  "version": "0.0.0",
+  "description": "play themed bookmarks component which reads/writes to a mounted filesystem iframe",
+  "main": "src/play-bookmarks.js",
+  "scripts": {
+    "start": "budo demo/demo.js:bundle.js --dir . --title $npm_package_name --force-default-index --ssl --live --open",
+    "build": "browserify demo/demo.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethereum-play/play-bookmarks.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethereum/play/issues"
+  },
+  "homepage": "https://ethereum-play.github.com/play-bookmarks",
+  "dependencies": {
+    "bel": "^6.0.0",
+    "csjs-inject": "^1.0.1"
+  },
+  "devDependencies": {
+    "budo": "^11.6.1"
+  }
+}
